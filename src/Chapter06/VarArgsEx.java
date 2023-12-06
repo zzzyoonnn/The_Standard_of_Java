@@ -7,7 +7,7 @@ public class VarArgsEx {
     System.out.println(concatenate("", "100", "200", "300"));
     System.out.println(concatenate("-", strArr));
     System.out.println(concatenate(",", new String[] {"1", "2", "3"}));
-    System.out.println("[" + concatenate(",", new String[0] + "]"));
+    System.out.println("[" + concatenate(",", new String[0]) + "]");
     System.out.println("[" + concatenate(",") + "]");
   }
   
