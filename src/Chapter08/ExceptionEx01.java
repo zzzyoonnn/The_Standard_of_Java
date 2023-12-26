@@ -1,6 +1,6 @@
 package Chapter08;
 
-class ExceptionEx1 {
+class ExceptionEx01 {
   public static void main(String[] args) {
     try {
       try { } catch (Exception e) { }

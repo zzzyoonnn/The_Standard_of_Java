@@ -1,6 +1,6 @@
 package Chapter08;
 
-class ExceptionEx2 {
+class ExceptionEx02 {
   public static void main(String[] args) {
     int number = 100;
     int result = 0;
