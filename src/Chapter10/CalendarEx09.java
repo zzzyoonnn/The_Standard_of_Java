@@ -11,19 +11,23 @@ class CalendarEx09 {
   
   public static int[] endOfMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};    // 각 달의 마지막 일
   
+  // 매개변수 year가 윤년이면 true를, 그렇지 않으면 false 반환
   public static boolean isLeapYear(int year) {
     return ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
   }
   
+  // 두 날짜 간의 차이를 일 단위로 반환
   public static int dayDiff(int y1, int m1, int d1, int y2, int m2, int d2) {
     return convertDateToDay(y1, m1, d1) - convertDateToDay(y2, m2, d2);
   }
   
+  // 지정한 날짜의 요일을 반환(1~7, 1이 일요일)
   public static int getDayOfWeek(int year, int month, int day) {
     // 1~7의 값을 반환한다. 결과가 1이면 일요일
     return convertDateToDay(year, month, day) % 7 + 1;
   }
   
+  // 일 단위의 값을 년월일의 형태의 문자열로 변환하여 반환
   public static String convertDayToDate(int day) {
     int year = 1;
     int month = 0;
@@ -55,6 +59,7 @@ class CalendarEx09 {
     return year + " " + (month + 1) + "-" + day;
   }
   
+  // 년월일을 입력받아서 일 단위로 변환
   public static int convertDateToDay(int year, int month, int day) {
     int numOfLeapYear = 0;  // 윤년의 수
     
