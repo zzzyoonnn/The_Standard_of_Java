@@ -9,7 +9,7 @@ class ThreadEx22 {
 }
 
 class Account {
-  private int balance = 100;    // private로 해야 동기화가 의미 있다.
+  private int balance = 1000;    // private로 해야 동기화가 의미 있다.
   
   public int getBalance() {
     return balance;
